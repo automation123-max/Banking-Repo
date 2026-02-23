@@ -1,0 +1,4 @@
+{"valid":[{"fullname":"poorni","email":"poornimard047@gmail.com","password":"9880233634","mobno":"8105688634"}],
+"inavlid":[{"fullname":"a","email":"poornimard@gmail.com","password":"9880233634","mobno":"810568863"},{
+"fullname":"abc","email":"poornimard@gmail.","password":"9880","mobno":"8105688634"},{"fullname":" ","email":"poornimard777@gmail.com","password":"9880233634","mobno":"8105688634"}]
+}
