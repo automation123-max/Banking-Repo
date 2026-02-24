@@ -13,88 +13,87 @@ test("test 3 ",async()=>{
     
 })
 
-tesk.skip
-test("test annotation ",async({page})=>{
+test("test annotation1 ",async({page})=>{
     console.log("test 1");
     
 })
-test("test 2 ",async({browserName})=>{
+test("test 21 ",async({browserName})=>{
     test.skip(browserName==="safari")
     
 })
 
-test("test 3 ",async()=>{
+test("test 31 ",async()=>{
     console.log("test 3");
     
 })
 
 //test
-test.only("test annotation ",async({page})=>{
+test("test annotation2 ",async({page})=>{
     console.log("test 1");
     
 })
-test("test 2 ",async({browserName})=>{
+test("test 22 ",async({browserName})=>{
     test.skip(browserName==="safari")
     
 })
 
-test("test 3 ",async()=>{
+test("test 32 ",async()=>{
     console.log("test 3");
     
 })
 
 //test.fail
 
-test.fail("test annotation ",async({page})=>{
+test.fail("test annotation3 ",async({page})=>{
     //console.log("test 1");
     await page.goto("ddffdkda")
     
 })
-test("test 2 ",async({browserName})=>{
+test("test 23 ",async({browserName})=>{
     //test.skip(browserName==="safari")
     console.log("test 2");
     
     
 })
 
-test("test 3 ",async()=>{
+test("test 36 ",async()=>{
     console.log("test 3");
     
 })
 
 //test.fixme
-test.fixme("test annotation ",async({page})=>{
+test.fixme("test annotation4 ",async({page})=>{
     console.log("test 1");
     await page.goto("guyfgsukfy")
     
 })
-test("test 2 ",async({browserName})=>{
+test("test 24 ",async({browserName})=>{
     //test.skip(browserName==="safari")
     console.log("test 2");
     
     
 })
 
-test("test 3 ",async()=>{
+test("test 34 ",async()=>{
     console.log("test 3");
     
 })
 
-test.slow
-test("test annotation ",async({page})=>{
+//test.slow
+test("test annotation5 ",async({page})=>{
     test.slow()
     console.log("test 1");
     //await page.goto("guyfgsukfy")
     
 })
-test("test 2 ",async({browserName})=>{
+test("test 25 ",async({browserName})=>{
     //test.skip(browserName==="safari")
     console.log("test 2");
     
     
 })
 
-test("test 3 ",async()=>{
+test("test 35 ",async()=>{
     console.log("test 3");
     
 })

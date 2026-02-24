@@ -1,5 +1,5 @@
 import{test} from "@playwright/test"
-import './newfile.spec'
+//import './newfile.spec'
 //click()
 //test("click",async ({page}) => {
 // await page.goto("https://demoapps.qspiders.com/ui/button?sublist=0")
