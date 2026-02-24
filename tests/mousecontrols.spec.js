@@ -1,4 +1,5 @@
 import{test} from "@playwright/test"
+import './newfile.spec'
 //click()
 //test("click",async ({page}) => {
 // await page.goto("https://demoapps.qspiders.com/ui/button?sublist=0")
@@ -91,7 +92,7 @@ test("drop and drag",async({page})=>{
 // await page.waitForTimeout(2000)
 
 //dragTo
-await page.goto("https://demoapps.qspiders.com/ui/dragDrop/dragToCorrect?sublist=2")
+await page.goto("https://.qspiders.com/ui/dragDrop/?subl")
 let source= page.locator('//div[text()="Mobile Charger"]')
 let target=page.locator('//div[text()="Mobile Accessories"]/parent::div')
 await page.waitForTimeout(2000)
