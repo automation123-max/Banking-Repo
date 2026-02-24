@@ -1,26 +1,26 @@
 import{test,expect} from "@playwright/test"
-//test("work",async({browser})=>{
-    // await page.goto("https://www.flipkart.com/")
-    // //await page.locator()
-    // await page.getByRole('textbox', {name: "Search for Products, Brands and More"}).fill("samsung")
-    // // await page.locator('//div[@class="URRkKz RzamwD"]').first().waitFor()
-    // // await page.locator('//div[@class="URRkKz RzamwD"]').first().click()
-    // await page.waitForTimeout(3000)
-    // await page.keyboard.press('ArrowDown')
-    // await page.keyboard.press('Enter')
-    // let [page2]=await Promise.all([
-    //     context.waitForEvent('page'),
-    //     page.click('(//div[@class="jIjQ8S"])[1]')])
-    // //await page2.waitForTimeout(2000)
-    // //await page2.waitForLoadState()
-    // //await page2.getByRole('button', {name: /go to cart/i}).click()
-    // let page3=await Promise.all([
-    //     context.waitForEvent('page'),
-    //     page2.click('//button[@class="dSM5Ub ugg2XR IUmgrZ"]')])
+test("work","@smoke",async({browser})=>{
+    await page.goto("https://www.flipkart.com/")
+    //await page.locator()
+    await page.getByRole('textbox', {name: "Search for Products, Brands and More"}).fill("samsung")
+    // await page.locator('//div[@class="URRkKz RzamwD"]').first().waitFor()
+    // await page.locator('//div[@class="URRkKz RzamwD"]').first().click()
+    await page.waitForTimeout(3000)
+    await page.keyboard.press('ArrowDown')
+    await page.keyboard.press('Enter')
+    let [page2]=await Promise.all([
+        context.waitForEvent('page'),
+        page.click('(//div[@class="jIjQ8S"])[1]')])
+    //await page2.waitForTimeout(2000)
+    //await page2.waitForLoadState()
+    //await page2.getByRole('button', {name: /go to cart/i}).click()
+    let page3=await Promise.all([
+        context.waitForEvent('page'),
+        page2.click('//button[@class="dSM5Ub ugg2XR IUmgrZ"]')])
         
-    // })
-    // let context=await browser.newContext()
-    // let page=await context.newPage()
+    })
+    let context=await browser.newContext()
+    let page=await context.newPage()
     // await page.goto("https://www.amazon.in/")
     // await page.locator('//input[@id="twotabsearchtextbox"]').fill("samsung")
     // await page.keyboard.press("ArrowDown")
@@ -33,9 +33,9 @@ import{test,expect} from "@playwright/test"
     // await page2.click('//input[@id="add-to-cart-button"]')
     //    await page.waitForTimeout(5000)
 
-    // })
+
    
-    test("e2e",async({page,context})=>{
+    test("e2e",{tag:"@smoke"},async({page,context})=>{
         await page.goto("https://www.amazon.in/")
         await expect(page).toHaveTitle('Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in');
         await page.waitForTimeout(2000)

@@ -11,7 +11,7 @@ import{test,expect} from "@playwright/test"
     
 // })
 
-test("checkbox", async({page})=>{
+test("checkbox",{tag:"@smoke"}, async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/checkbox?sublist=0")
     await page.locator('//input[@id="domain_a"]').check()
     await page.waitForTimeout(2000)
