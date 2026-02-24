@@ -47,7 +47,7 @@ test('Dynamic Product Selection on Amazon', async ({ page }) => {
 })
 
 //1.Open MMT ,write xpath for departure date and price and validate it.
-//test.only("",async({page})=>{
+//test("",async({page})=>{
 //  await page.goto("https://www.makemytrip.com/")
 //    waitUntil: 'domcontentloaded',
 //    timeout: 60000}
